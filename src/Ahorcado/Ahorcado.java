@@ -9,7 +9,13 @@ public class Ahorcado extends  Dato{
     private static String Dato;
 
 
+    public static void main(String[] args) {
+        Dato obj = new Dato();
+        obj.variable();
 
+        Ahorcado obj1 = new Ahorcado();
+        obj1.juego();
+    }
 
     public static void data(String[] args) {
         Dato ahogado = new Dato();
