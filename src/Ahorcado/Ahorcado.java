@@ -9,10 +9,11 @@ public class Ahorcado extends  Dato{
     private static String Dato;
 
 
-    public static void main(String[] args) {
+
+
+    public static void data(String[] args) {
         Dato ahogado = new Dato();
         ahogado.variable();
-
 
     }
     
