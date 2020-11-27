@@ -5,23 +5,21 @@ import java.util.Scanner;
 
 public class Ahorcado extends  Dato{
     public static char letra;
-    private static String variable;
-    private static String Dato;
+    public static String Dato;
 
 
     public static void main(String[] args) {
-        Dato obj = new Dato();
-        obj.variable();
-
-        Ahorcado obj1 = new Ahorcado();
-        obj1.juego();
-    }
-
-    public static void data(String[] args) {
         Dato ahogado = new Dato();
         ahogado.variable();
 
+
+        Ahorcado obj = new Ahorcado();
+        obj.juego();
+
+
     }
+
+
     
 
     public static void juego() {
@@ -50,14 +48,14 @@ public class Ahorcado extends  Dato{
                 System.out.println("Fallaste");
                 --intentos;
                 if (intentos==0) {
-                    System.out.println("Adiosssssssssss");
+                    System.out.println("Gana el primer jugador");
                     juegoTerminado = true;
                 }
             }
             else {
                 boolean juegoGanado = !hayGuiones(palabraGuiones);
                 if (juegoGanado) {
-                    System.out.println("Ganaste");
+                    System.out.println("Gana el segundo jugador");
                     juegoTerminado = true;
                 };
             }
